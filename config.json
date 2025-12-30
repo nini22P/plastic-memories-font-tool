@@ -1,0 +1,57 @@
+{
+  "output_dir": "font",
+  "chars_file": "chars.txt",
+  "font_sizes": [
+    {
+      "maxHeight": 8,
+      "maxWidth": 9,
+      "minHeight": 8,
+      "minWidth": 2
+    },
+    {
+      "maxHeight": 12,
+      "maxWidth": 15,
+      "minHeight": 12,
+      "minWidth": 3
+    },
+    {
+      "maxHeight": 16,
+      "maxWidth": 19,
+      "minHeight": 16,
+      "minWidth": 5
+    },
+    {
+      "maxHeight": 24,
+      "maxWidth": 31,
+      "minHeight": 24,
+      "minWidth": 7
+    },
+    {
+      "maxHeight": 32,
+      "maxWidth": 41,
+      "minHeight": 32,
+      "minWidth": 9
+    },
+    {
+      "maxHeight": 48,
+      "maxWidth": 62,
+      "minHeight": 48,
+      "minWidth": 14
+    }
+  ],
+  "atlas_max_size": 2048,
+  "global_offset_correction": 6.0,
+  "global_scale": 1.25,
+  "fonts": [
+    {
+      "path": "./方正FW轻吟体 简 D.TTF",
+      "scale": 1.0,
+      "offset_y": 0.0
+    },
+    {
+      "path": "./FOT-Humming Std D.otf",
+      "scale": 0.76,
+      "offset_y": 1
+    }
+  ]
+}
