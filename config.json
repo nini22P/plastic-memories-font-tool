@@ -1,5 +1,5 @@
 {
-  "output_dir": "font",
+  "output_dir": "output",
   "chars_file": "chars.txt",
   "font_sizes": [
     {

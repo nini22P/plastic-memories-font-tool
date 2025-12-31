@@ -394,16 +394,17 @@ fn load_characters(config: &AppConfig) -> Result<Vec<char>, Box<dyn std::error::
         println!("警告: 未找到字符集文件，使用默认备用字符集");
         " !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{{|}}~".to_string()
     };
+
     let mut unique: Vec<char> = content
         .chars()
+        .filter(|&c| !c.is_control() && c != ' ')
         .collect::<HashSet<_>>()
         .into_iter()
         .collect();
+
     unique.sort();
-    if let Some(pos) = unique.iter().position(|&c| c == ' ') {
-        unique.remove(pos);
-    }
     unique.insert(0, ' ');
+
     Ok(unique)
 }
 
